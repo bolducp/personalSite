@@ -3,12 +3,6 @@ body {
   font-size: 18px;
 }
 
-#footer {
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-}
-
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -17,4 +11,12 @@ body {
 
 .navbar .navbar-default {
   margin-bottom: 0;
+}
+
+
+
+#footer {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
 }
