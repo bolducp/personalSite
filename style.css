@@ -3,9 +3,19 @@ body {
   font-size: 18px;
 }
 
+h2 {
+  text-align: center;
+}
+
 nav.navbar.navbar-default {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+iframe {
+  width:80vw;
+  height: 500px;
+  padding: 5%;
 }
 
 .navbar .navbar-nav {
@@ -13,6 +23,20 @@ nav.navbar.navbar-default {
   float: none;
 }
 
+
+#aboutMe {
+  background-image: url(images/desk.jpeg);
+}
+
+#bio {
+  margin: 5%;
+  padding-left: 5px;
+}
+
+#blog {
+  background-color: #DFCCBA;
+  text-align: center;
+}
 
 #contact {
   background-color: #8C7370;
@@ -23,17 +47,21 @@ nav.navbar.navbar-default {
   text-align: center;
 }
 
-
-
 #landing {
   background-image: url(images/landing_background.jpeg);
 }
 
-
-
 #landing p {
   font-size: 18px;
   margin: 10% 5% 12% 12%;
+}
+
+#projects {
+  background-color: #8C7370;
+}
+
+#moreProjects {
+  background-color: #DFCCBA;
 }
 
 .footer {
@@ -68,4 +96,32 @@ nav.navbar.navbar-default {
 
 .section .buttonRow button:hover {
   background-color: rgba(255,255,255,0.7);
+}
+
+.card {
+  background-color: rgba(255,255,255,0.8);
+  margin: 10%;
+  border: 1px solid black;
+}
+
+.card-image > img {
+  height: 200px;
+  position: relative;
+  width: 100%;
+}
+
+.card .card-image .card-title {
+  color: black;
+  position: relative;
+  padding: 20px;
+}
+
+.card .card-content {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+}
+
+.card .card-action {
+  border-top: 1px solid rgba(160,160,160,0.2);
+  padding: 20px;
 }

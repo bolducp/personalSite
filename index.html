@@ -18,7 +18,8 @@
 
   <title>Paige Bolduc</title>
 </head>
-<body>
+<body ng-app="siteApp">
+  <div ng-controller="mainCtrl">
 
   <!-- top navbar -->
   <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
@@ -86,11 +87,195 @@
 
 
 
+  <!-- Projects section -->
+  <div class="container-fluid section" id="projects">
+    <a name="projects"></a>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/typewriter.jpeg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/typewriter.jpeg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/typewriter.jpeg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row buttonRow text-center" >
+          <a href="#moreProjects" du-smooth-scroll>
+            <button type="button" class="btn btn-default btn-lg">
+              More
+              <br>
+              <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            </button>
+          </a>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- More projects section -->
+  <div class="container-fluid section" id="moreProjects">
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/typewriter.jpeg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/typewriter.jpeg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/typewriter.jpeg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row buttonRow text-center" >
+        <a href="#aboutMe" du-smooth-scroll>
+          <button type="button" class="btn btn-default btn-lg">
+            About Me
+            <br>
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- About Me section -->
+  <div class="container-fluid section" id="aboutMe">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="transparentWrapper">
+          <div class="row">
+            <div class="col-m-12" id="bio">
+              <h2>My Story</h2>
+              <br>
+              <p>
+                After nearly six years of studying literature and theory in college and grad school, I discovered coding in February 2015 and decided to change what I was doing with my life.<br><br>
+
+                I left my PhD program and began to devote all of my waking time to studying software and web development. I self-studied Python for 4 months (August - November 2015) and then moved to California to attend <a href="www.codinghouse.co">Coding House</a>-- a fully-immersive full stack JavaScript bootcamp. <br><br>
+                I love software and web development because they are expansive, constantly developing fields in which there’s always more to discover. Even more inspiring to me, though, is the potential to work with other developers to make a real, tangible difference in the world through programming. I'm serious about learning foundational best practices and driven to work hard and improve.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row buttonRow text-center" >
+      <a href="#blog" du-smooth-scroll>
+        <button type="button" class="btn btn-default btn-lg">
+          Blog
+          <br>
+          <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+        </button>
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- Blog section -->
+    <div class="container-fluid section" id="blog">
+      <br>
+      <br>
+      <h3>My Blog</h3>
+      <h5>documenting my software development journey</h5>
+      <a href="https://paigelearnscode.wordpress.com">
+        <h5>paigelearnscode.wordpress.com</h5>
+      </a>
+    <iframe src="https://paigelearnscode.wordpress.com/about/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+
+
 
 
 
   <!-- Contact section -->
-  <div class="container" id="contact">
+  <div class="container-fluid" id="contact">
     <br>
     <h3>paigebolduc@gmail.com</h3><br>
     <br>
@@ -112,6 +297,6 @@
 
 
 
-
+  </div>
 </body>
 </html>
