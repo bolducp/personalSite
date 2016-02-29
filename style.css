@@ -49,3 +49,13 @@ nav.navbar.navbar-default {
 .section {
   background-size: cover;
 }
+
+.section .buttonRow button {
+  background-color: rgba(255,255,255,0.3);
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+.section .buttonRow button:hover {
+  background-color: rgba(255,255,255,0.7);
+}
