@@ -7,7 +7,6 @@ app.value('duScrollDuration', 1200);
 app.controller('mainCtrl', function($scope, $location, $anchorScroll) {
    $scope.scrollTo = function(id) {
       $location.hash(id);
-      console.log("ID", id);
       $anchorScroll();
    }
 });
