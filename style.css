@@ -7,57 +7,16 @@ h2 {
   text-align: center;
 }
 
-nav.navbar.navbar-default {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
 iframe {
   width:80vw;
   height: 500px;
   padding: 5%;
 }
 
-#aboutMe {
-  background-image: url(images/desk.jpeg);
+nav.navbar.navbar-default {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-
-#bio {
-  margin: 5%;
-  padding-left: 5px;
-}
-
-#blog {
-  background-color: #DFCCBA;
-  text-align: center;
-}
-
-#contact {
-  background-color: #8C7370;
-  height: 20vh;
-  width: 100vw;
-  padding: 0px;
-  color: snow;
-  text-align: center;
-}
-
-#landing {
-  background-image: url(images/landing_background.jpeg);
-}
-
-#landing p {
-  font-size: 18px;
-  margin: 10% 5% 12% 12%;
-}
-
-#moreProjects {
-  background-color: #DFCCBA;
-}
-
-#projects {
-  background-color: #8C7370;
-}
-
 
 .card {
   background-color: rgba(255,255,255,0.8);
@@ -69,12 +28,14 @@ iframe {
   height: 200px;
   position: relative;
   width: 100%;
+  padding-bottom: 5px;
 }
 
 .card .card-image .card-title {
   color: black;
   position: relative;
   padding: 20px;
+  font-weight: bolder;
 }
 
 .card .card-content {
@@ -119,9 +80,58 @@ iframe {
   background-color: rgba(255,255,255,0.7);
 }
 
+.bold {
+  font-weight: bolder;
+}
+
 .transparentWrapper {
   margin: 10%;
   background-color: rgba(255,255,255,0.8);
   width: 80%;
   border: 1px solid black;
+}
+
+#aboutMe {
+  background-image: url(images/desk.jpeg);
+}
+
+#bio {
+  margin: 5%;
+  padding-left: 5px;
+}
+
+#bio p {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+#blog {
+  background-color: #DFCCBA;
+  text-align: center;
+}
+
+#contact {
+  background-color: #8C7370;
+  height: 20vh;
+  width: 100vw;
+  padding: 0px;
+  color: snow;
+  text-align: center;
+}
+
+#landing {
+  background-image: url(images/landing_background.jpeg);
+}
+
+#landing p {
+  font-size: 18px;
+  margin: 10% 5% 12% 12%;
+}
+
+#moreProjects {
+  background-color: #DFCCBA;
+}
+
+#projects {
+  background-color: #8C7370;
 }
