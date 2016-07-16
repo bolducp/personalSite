@@ -141,3 +141,7 @@ nav.navbar.navbar-default {
 #projects {
   background-color: #8C7370;
 }
+
+#cyrus_logo {
+  cursor: pointer;
+}
