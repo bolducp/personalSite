@@ -142,6 +142,8 @@ nav.navbar.navbar-default {
   background-color: #8C7370;
 }
 
-#cyrus_logo {
+#def_method_logo {
   cursor: pointer;
+  height: 90px;
+  padding: 10px 5px;
 }
