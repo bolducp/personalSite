@@ -142,8 +142,9 @@ nav.navbar.navbar-default {
   background-color: #8C7370;
 }
 
-#def_method_logo {
+#smartlogic_logo {
   cursor: pointer;
   height: 90px;
   padding: 10px 5px;
+  max-height: 50px;
 }
