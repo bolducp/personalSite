@@ -112,17 +112,36 @@ nav.navbar.navbar-default {
 }
 
 #blog {
-  background-color: #DFCCBA;
+  background-color: #8C7370;
   text-align: center;
+}
+
+#blog > a {
+  color: black;
+}
+
+#blog > a > img {
+  width: 80%;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 10%;
+}
+
+#blog > a > img:hover {
+  border: 3px solid black;
 }
 
 #contact {
   background-color: #8C7370;
-  height: 20vh;
+  height: 10vh;
   width: 100vw;
   padding: 0px;
   color: snow;
   text-align: center;
+}
+
+#contact > h3 {
+  margin-top: 3vh;
 }
 
 #landing {
@@ -135,7 +154,12 @@ nav.navbar.navbar-default {
 }
 
 #moreProjects {
-  background-color: #DFCCBA;
+  background-color: #E8BDAE;
+}
+
+#old_blog {
+  background-color: #E8BDAE;
+  text-align: center;
 }
 
 #projects {
