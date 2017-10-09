@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Sansita" rel="stylesheet">
+    <link rel="stylesheet" href="/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="/revealjs/css/theme/solarized.css" id="theme">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="/revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/revealjs/css/print/pdf.css' : '/revealjs/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h2>From Literature to Code</h2>
+          <h4>What studying literature taught me about how to write software</h4>
+          <br>
+          <br>
+          <h3>jrWebDev Meetup</h3>
+          <p>7 October 2017</p>
+          <p>
+          <small>By <a href="http://www.paigebolduc.com/">Paige Bolduc</a> / <a href="https://twitter.com/paige_bolduc">@paige_bolduc</a></small>
+          </p>
+        </section>
+
+        <section>
+          <h3 class="header_text">Literary Studies: An Overview</h3>
+          <h4 class="subheader">
+            <u>Typical Subdivisions</u>
+          </h4>
+          <ul class="large">
+            <li>British Literature
+              <img class="small_img" src="/images/british_flag.png" alt="British Flag"/>
+            </li>
+            <li>U.S. Literature
+              <img class="small_img" src="/images/american_flag.png" alt="U.S. Flag"/>
+            </li>
+            <li>World Literature
+              <img class="small_img" src="/images/globe.png" alt="Globe"/>
+            </li>
+            <li>Critical Theory
+              <span>
+                <img class="small_img" src="/images/open_book.png" alt="Book"/>
+                <img class="small_img" src="/images/question-mark.png" alt="Question Mark"/>
+              </span>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="header_text">Literary Studies: An Overview</h3>
+          <h4 class="subheader"><u>Critical Theory</u></h4>
+          <div style="float:left; width: 55%; margin-left: 5%;">
+            <blockquote style='font-size: 28px'>
+            "Literary theory" is the body of ideas and methods we use in the practical reading of literature. [...] Literary theory is a description of the underlying principles, one might say the tools, by which we attempt to understand literature.
+            </blockquote>
+            <a href="http://www.iep.utm.edu/literary/"><span style="font-size: 30px">-Vince Brewton <br>(Internet Encyclopedia of Philosophy)</span></a>
+          </div>
+          <div style="margin-left: 2%">
+            <a href="https://owl.english.purdue.edu/owl/resource/722/01/">
+              <img style="width: 30%;" data-src="/images/critical_theory.png" alt="schools of theory">
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="header_text">Literary Studies: An Overview</h3>
+          <h4 class="subheader"><u>But what's it really like?</u></h4>
+          <a href="https://www.nyam.org/media/filer_public_thumbnails/filer_public/db/0a/db0a88ae-2cd0-42f5-a15c-99a9073f8926/librarylp.jpg__1500x350_q85_crop_subsampling-2_upscale.jpg">
+            <img style="height: 20vh" data-src="/images/nyc_library.jpg" alt="NYC library">
+          </a>
+          <ul>
+            <li class="fragment">more time spent with <span class="subheader">secondary sources</span> than primary texts</li>
+            <li class="fragment"><span class="subheader">lack of emphasis</span> on grammar, language, & linguistics</li>
+            <li class="fragment"><span class="subheader">disciplinary overlap</span>: philosophy, history, economics, gender studies, cultural studies</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="header_text">Literature & Software: A Comparison</h3>
+          <img style="width: 80%;" data-src="/images/clean_code_elements_of_style.png" alt="clean code/elements of style">
+        </section>
+
+        <section>
+          <h3 class="header_text">Elements of Style</h3>
+          <p>Organization, Structure, Style & (Changing) Conventions</p>
+          <img style="width: 80%;" data-src="/images/principles_of_composition.png" alt="principles of composition">
+        </section>
+
+        <section>
+          <h3 class="header_text">SICP: The Elements of Programming</h3>
+          <img style="float: left; max-width: 25%;" data-src="/images/SICP.jpg" alt="SICP">
+          <img style="width: 60%;" data-src="/images/elements_of_programming.png" alt="elements of programming">
+        </section>
+
+        <section>
+            <h3 class="header_text">5 Skills for Writing Software</h3>
+            <h4 class="subheader">...I learned from studying literature</h4>
+        </section>
+
+        <section>
+          <h3 class="header_text">1.) How to Deal with Unfamiliar Jargon</h3>
+          <img style="width: 75%;" data-src="/images/jargon.png" alt="jargon examples in tech and literary studies">
+        </section>
+
+        <section>
+          <h4 class="header_text">2.) How to Structure and Organize a System</h4>
+          <img style="width: 55%;" data-src="/images/suitable_design.png" alt="elements of style suitable design quote">
+        </section>
+
+        <section>
+          <h4 class="header_text">3.) How to Break a Concept into Smaller Parts </h4>
+          <img style="width: 48%; float: left" data-src="/images/paragraph_unit.png" alt="make the paragraph the unit of composition">
+          <img style="width: 48%;" data-src="/images/do_one_thing.jpeg" alt="clean code-- functions do one thing">
+        </section>
+
+        <section>
+          <h3 class="header_text">4.) How to Write Clearly</h3>
+          <img style="width: 48%; float: left" data-src="/images/cost_of_clarity.png" alt="cost of clarity rul excerpt">
+          <img style="width: 48%; " data-src="/images/clean_code_readability.png" alt="clean code-- readbility">
+        </section>
+
+        <section>
+          <h4 class="header_text">5.) How to Create Something on a Blank Screen</h4>
+          <div style="float:left; width: 45%;">
+            <img src="../images/empty_word_doc.png" alt="blank text document">
+          </div>
+          <div style="float: right; width: 45%; margin-left: 5%;">
+            <img src="../images/empty_editor.png" alt="blank text editor">
+          </div>
+        </section>
+
+        <section>
+          <h3 style="margin-bottom: 0" class="header_text">What Can Tech Learn from Literature?</h3>
+          <div style="text-align: center">
+            <img style="width: 30%;" src="../images/intersectionality.jpg" alt="intersectionality explanation">
+            <span style="font-size: 15px; margin-left: -25%;">Image Credit: <a href="http://www.nymgamer.com/?p=12660" rel="external" title="" class="ext-link">Ashley J. Velazquez</span></a>
+          </div>
+
+          <div>
+            <span>
+              <img class="book_cover" data-src="/images/cover1.jpg" alt="book cover showing example of intersectionality study">
+            </span>
+            <span>
+              <img class="book_cover" data-src="/images/cover2.jpg" alt="book cover showing example of intersectionality study">
+            </span>
+            <span>
+              <img class="book_cover" data-src="/images/cover3.jpg" alt="book cover showing example of intersectionality study">
+            </span>
+            <span>
+              <img class="book_cover" data-src="/images/cover4.jpeg" alt="book cover showing example of intersectionality study">
+            </span>
+            <span>
+              <img class="book_cover" data-src="/images/cover5.jpg" alt="book cover showing example of intersectionality study">
+            </span>
+            <span>
+              <img class="book_cover" data-src="/images/cover6.jpg" alt="book cover showing example of intersectionality study">
+            </span>
+            <span>
+              <img class="book_cover" data-src="/images/cover7.jpg" alt="book cover showing example of intersectionality study">
+            </span>
+            <span>
+              <img class="book_cover" data-src="/images/cover8.jpg" alt="book cover showing example of intersectionality study">
+            </span>
+          </div>
+
+          <p style="margin-top: -5px; margin-bottom: 0">
+            <span style="font-weight: bold">intersectionality-focused</span>
+            analysis of human relations
+          </p>
+        </section>
+
+        <section>
+          <h3 class="header_text"><u>10 Book Recommendations</u></h3>
+          <ul>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/One_Day_of_Life">
+                <span style="font-style: italic">One Day of Life</span>
+              </a>, Manlio Argueta
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/A_Fine_Balance">
+                <span style="font-style: italic">A Fine Balance</span>
+              </a>, Rohinton Mistry
+            </li>
+            <li>
+              <a href="https://books.google.com/books/about/On_Sal_Mal_Lane.html?id=ndfEAgAAQBAJ">
+                <span style="font-style: italic">On Sal Mal Lane</span>
+              </a>, Ru Freeman
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Waiting_for_the_Barbarians">
+                <span style="font-style: italic">Waiting for the Barbarians</span>
+              </a>, J. M. Coetzee
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Mrs_Dalloway">
+                <span style="font-style: italic">Mrs. Dalloway</span>
+              </a>, Virgina Woolf
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Mrs_Dalloway">
+                <span style="font-style: italic">The Conversations of Cow</span>
+              </a>, Suniti Namjoshi
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Masks_(novel)">
+                <span style="font-style: italic">Masks</span>
+              </a>, Fumiko Enchi
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Incidents_in_the_Life_of_a_Slave_Girl">
+                <span style="font-style: italic">Incidents in the Life of a Slave Girl</span>
+              </a>, Harriet A. Jacobs
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Petals_of_Blood">
+                <span style="font-style: italic">Petals of Blood</span>
+              </a>, Ngũgĩ wa Thiong'o
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/The_Edible_Woman">
+                <span style="font-style: italic">The Edible Woman</span>
+              </a>, Margaret Atwood
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="header_text">Thanks!</h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="/revealjs/lib/js/head.min.js"></script>
+    <script src="/revealjs/js/reveal.js"></script>
+
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    history: true,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+    { src: '/revealjs/plugin/markdown/marked.js' },
+    { src: '/revealjs/plugin/markdown/markdown.js' },
+    { src: '/revealjs/plugin/notes/notes.js', async: true },
+    { src: '/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+    });
+    </script>
+  </body>
+</html>
