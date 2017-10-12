@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Sansita" rel="stylesheet">
+    <link rel="stylesheet" href="/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="/revealjs/css/theme/solarized.css" id="theme">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="/revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/revealjs/css/print/pdf.css' : '/revealjs/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h2>Chart.js</h2>
+          <img style="border: none" src="/images/chartjs.png" alt="ChartJS icon"/>
+          <h3>10-Minute Review</h3>
+          <br>
+          <p>Company Lunch - 12 October 2017</p>
+          <p>
+        </section>
+
+        <section>
+          <h3 class="header_text">Quick Facts</h3>
+          <ul>
+            <li><strong>Website Tagline</strong>: "Simple yet flexible JavaScript charting for designers & developers"</li>
+            <li><strong>Github description</strong>: "Simple HTML5 Charts using the canvas element"</li>
+            <li>Version 2.0 released April 2016</li>
+          </ul>
+          <img style="border: none; max-height: 15%" src="/images/chartjs_github.png" alt="ChartJS icon"/>
+        </section>
+
+        <section>
+          <h2 class="header_text">Pros</h2>
+          <br>
+          <ul>
+            <li>Actively supported</li>
+            <li>Extremely easy to implement basic graphs</li>
+            <li>Bar, line, radar, pie/doughnut, polar area, bubble, scatter, +</li>
+            <li>Cool built-in dynamic filtering & hovering labels</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="header_text">Actively Supported</h3>
+          <img style="width: 80%;" data-src="/images/active_support.png" alt="actively supported">
+        </section>
+
+        <section>
+          <h3 class="header_text">Extremely Simple Base Case</h3>
+          <a href="https://codepen.io/SitePoint/pen/QKLKJV">
+            <img style="width: 80%;" data-src="/images/base_case.png" alt="base case example">
+          </a>
+        </section>
+
+        <section>
+          <h3 class="header_text">Many Chart Type Options</h3>
+          <h5 class="header_text">+ built-in filtering & hover labels</h5>
+          <a href="http://www.chartjs.org/samples/latest/">
+            <img style="width: 60%;" data-src="/images/options.png" alt="chart type options">
+          </a>
+        </section>
+
+        <section>
+          <h2 class="header_text">Cons</h2>
+          <br>
+          <ul>
+            <li>Documentation could use some work</li>
+            <li>Customizing can get messy</li>
+            <li>Styling can be a pain</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="header_text">Spotty Documentation</h3>
+          <p>&</p>
+          <h3 class="header_text">Messy Customization and Styling</h3>
+          <a href="http://www.chartjs.org/docs/latest/">
+            <img style="width: 60%;" data-src="/images/chartjs_docs.png" alt="chart js docs">
+          </a>
+
+        </section>
+
+
+
+        <section>
+          <h3 class="header_text">Overall Recommendation</h3>
+          <br>
+          <p>Great for simple cases, but there might be better options when customization is key</p>
+        </section>
+
+        <section>
+          <h3 class="header_text">Questions?</h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="/revealjs/lib/js/head.min.js"></script>
+    <script src="/revealjs/js/reveal.js"></script>
+
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    history: true,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+    { src: '/revealjs/plugin/markdown/marked.js' },
+    { src: '/revealjs/plugin/markdown/markdown.js' },
+    { src: '/revealjs/plugin/notes/notes.js', async: true },
+    { src: '/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+    });
+    </script>
+  </body>
+</html>
