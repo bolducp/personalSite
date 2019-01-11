@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Redux + Sagas Talk</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Sansita" rel="stylesheet">
+    <link rel="stylesheet" href="/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="/revealjs/css/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="/revealjs/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '/revealjs/css/print/pdf.css' : '/revealjs/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>React Native</h2>
+            <img style="border: none; max-height: 200px; padding: 20px; margin: 15px; display:inline-block" src="/images/rn_logo.png" alt="React Native logo"/>
+            <img style="border: none; max-height: 200px; padding: 20px; margin: 15px; display:inline-block" src="/images/sl_logo.png" alt="SmartLogic logo"/>
+          <h3>Redux (+ Sagas) Architecture Overview</h3>
+          <br>
+          <p>Company Lunch - 10 January 2018</p>
+          <p>
+        </section>
+
+        <section>
+          <h4 class="header_text">Common Project Structure</h4>
+          <img style="border: none; max-width: 18%; max-height: 700px; padding: 15px; margin-right: 50px; display:inline-block" src="/images/full_project_structure.png" alt="project structure"/>
+          <img style="border: none; max-width: 20%; max-height: 600px; padding: 15px; display:inline-block" src="/images/project_structure.png" alt="full directory structure"/>
+        </section>
+
+        <section>
+          <h3 class="header_text">Key Redux + Sagas Architecture Pieces</h3>
+          <br>
+          <div style="max-width: 45%; display:inline-block;">
+            <ul style="min-height: 85%;" >
+              <li>network.js</li>
+              <li>api.js</li>
+              <li>Actions</li>
+              <li>Sagas</li>
+              <li>Reducers</li>
+              <li>Scenes (& Containers)</li>
+              <li>Components</li>
+              </br>
+              </br>
+              </br>
+            </ul>
+          </div>
+          <div style="max-width: 40%; display:inline-block;">
+            <img style="border: none; max-width: 65%; max-height: 700px; margin-left: 10%; padding: 10px;" src="/images/project_structure_with_underlines.png" alt="project structure"/>
+          </div>
+
+        </section>
+
+        <section>
+          <h4 class="header_text">Architecture Diagram</h4>
+          <img style="width: 105%;" data-src="/images/architecture.png" alt="architecture diagram">
+        </section>
+
+        <section>
+          <img style="max-width: 110%; max-height: 100%;" data-src="/images/architecture_with_arrows.png" alt="architecture diagram with arrows">
+        </section>
+
+        <section>
+          <p class="header_text">network.js</p>
+          <img style="width: 115%;" data-src="/images/networkjs.png" alt="network js">
+        </section>
+
+        <section>
+          <p class="header_text">network.js</p>
+          <img style="max-width: 85%; max-height: 100%;" data-src="/images/network_js_file.png" alt="newtwork js file">
+        </section>
+
+        <section style="padding: 0px;">
+          <p class="header_text">api.js</p>
+          <img style="width: 100%;" data-src="/images/apijs.png" alt="api js">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">api.js</p>
+          <img style="max-width: 85%; max-height: 100%;" data-src="/images/api_js_file.png" alt="api js file">
+        </section>
+
+        <section style="padding: 0px;">
+          <p class="header_text"><a href="https://redux-saga.js.org/">Sagas</a></p>
+          <img style="width: 95%;" data-src="/images/sagas.png" alt="sagas">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Saga Example: &nbsp;userSaga</p>
+          <img style="max-width: 105%; max-height: 100%;" data-src="/images/user_saga.png" alt="user saga file">
+        </section>
+
+        <section>
+          <h5 class="header_text" style="margin: 0px;"><a href="https://redux-saga.js.org/docs/basics/UsingSagaHelpers.html">Sagas Helpers</a> Setup</h5>
+          <p>at the bottom of each saga file:</p>
+          <img style="max-width: 100%; max-height: 100%;" data-src="/images/bottom_user_saga.png" alt="bottom of user saga file">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Sagas:  &nbsp; fetchEntries example</p>
+          <img style="max-width: 95%; max-height: 100%;" data-src="/images/fetch_entries_saga.png" alt="entries saga file">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Sagas: &nbsp; postEntry example</p>
+          <img style="max-width: 90%; max-height: 100%;" data-src="/images/post_entry_saga.png" alt="entries saga file- posting">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">ACTIONs</p>
+          <img style="max-width: 95%; max-height: 100%;" data-src="/images/actions.png" alt="redux actions">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">ACTIONs: &nbsp; example</p>
+          <img style="max-width: 105%; max-height: 100%;" data-src="/images/entry_actions.png" alt="entries actions file">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">ACTIONs: &nbsp; example</p>
+          <img style="max-width: 75%; max-height: 100%;" data-src="/images/entry_actions_close_up.png" alt="entries actions file closer up">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">ACTIONs: &nbsp; common UI & navigation examples</p>
+          <img style="max-width: 110%; max-height: 100%;" data-src="/images/ui_and_stack_actions.png" alt="actions files for UI and Routing changes">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">exporting & using ACTIONs</p>
+          <img style="max-width: 112%; max-height: 100%;" data-src="/images/action_exports.png" alt="exporting actions">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Reducers & the <a href="https://redux.js.org/api/store">Redux Store</a></p>
+          <img style="max-width: 100%; max-height: 100%;" data-src="/images/reducer_and_store.png" alt="reducers and the redux store">
+        </section>
+
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Basic Reducer- switch statement on the ACTION type</p>
+          <img style="max-width: 85%; max-height: 15%;" data-src="/images/user_reducer.png" alt="user reducer file">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Reducer- REDUCERS object</p>
+          <img style="max-width: 85%; max-height: 100%;" data-src="/images/user_reducer_2.png" alt="user reducer file using a REDUCERS object">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Reducer- with <a href="https://github.com/rtfeldman/seamless-immutable">Immutable library</a></p>
+          <img style="max-width: 98%; max-height: 100%;" data-src="/images/user_reducer3.png" alt="user reducer file using Immutable library">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">User Reducer: 3 variations</p>
+          </br>
+          <img style="max-width: 110%; max-height: 120%;" data-src="/images/user_reducer_alt_options.png" alt="3 ways to write the same reducer">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;"><a href="https://redux.js.org/api/combinereducers">Root Reducer</a> Setup</p>
+          </br>
+          <img style="max-width: 110%; max-height: 100%;" data-src="/images/reducer_setup.png" alt="root reducer setup">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Scene + Container</p>
+          </br>
+          <img style="max-width: 100%; max-height: 100%;" data-src="/images/scene_and_container.png" alt="scenes and container">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Scene + Container Example:  &nbsp;EntryList.js</p>
+          <img style="max-width: 100%; max-height: 105%;" data-src="/images/entry_list.png" alt="entry list and container file">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Scene + Container Example:  &nbsp;EntryList.js</p>
+          <img style="max-width: 100%; max-height: 110%;" data-src="/images/entry_list_with_arrows.png" alt="entry list and container file with arrows">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Scene + Container Example:  &nbsp;EntryList.js</p>
+          <img style="max-width: 100%; max-height: 110%;" data-src="/images/entry_list_with_arrows_close_up.png" alt="entry list and container file with arrows closer up">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Components</p>
+          <img style="max-width: 100%; max-height: 100%;" data-src="/images/component.png" alt="component">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Component Example: &nbsp;Header</p>
+          <img style="max-width: 100%; max-height: 100%;" data-src="/images/header_component_file.png" alt="header component file">
+        </section>
+
+        <section>
+          <p class="header_text" style="margin: 0px;">Component Usage</p>
+          <img style="max-width: 100%; max-height: 100%;" data-src="/images/header_component.png" alt="component usage example">
+        </section>
+
+        <section>
+          <h2 class="header_text">Docs & Tools</h2>
+          </br>
+          <p class="header_text" style="margin: 0px;"><a href="https://github.com/jhen0409/react-native-debugger">React Native Debugger</a></p>
+          <p class="header_text" style="margin: 0px;"><a href="https://redux.js.org/">Redux Docs</a></p>
+          <p class="header_text" style="margin: 0px;"><a href="https://redux-saga.js.org/">Redux-Saga Docs</a> (really good)</a></p>
+          <p class="header_text" style="margin: 0px;"><a href="https://github.com/rtfeldman/seamless-immutable">Immutable Docs</a></p>
+          <p class="header_text" style="margin: 0px;"><a href="https://davidwalsh.name/es6-generators">ES6 Generators</a> (to understand the mechanics of sagas)</p>
+        </section>
+
+        <section>
+          <h3 class="header_text">The End</h3>
+          <img style="max-width: 75%; max-height: 100%;" data-src="/images/architecture_with_arrows.png" alt="architecture diagram with arrows">
+          </br>
+          <p class="header_text">Questions?</p>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="/revealjs/lib/js/head.min.js"></script>
+    <script src="/revealjs/js/reveal.js"></script>
+
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    history: true,
+
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+    { src: '/revealjs/plugin/markdown/marked.js' },
+    { src: '/revealjs/plugin/markdown/markdown.js' },
+    { src: '/revealjs/plugin/notes/notes.js', async: true },
+    { src: '/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+    });
+    </script>
+  </body>
+</html>
